@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Landing page</title>
 </head>
+
 <body>
 
     <!-- bootstrap container -->
     <div class="container-fluid">
         <!-- About section -->
-        <div>
-            
-        </div>
-        <!-- Contact section -->
-        <div>
+        <section>
             <div class="row">
-                <h1 class="text-primary text-center my-5">Contact us</h1>
+                <h1 class="text-primary text-center my-5">About me</h1>
+                <div class="offset-1 col-7">
+                    <h2 class="h5">Creative & Passionate</h2>
+                    <p>I’m a product designer based in London. I am currently working as a freelancer
+                        with various agencies and companies all over the world. My working experience
+                        covers a wide variety of project scopes including product design, mobile apps, theme
+                        development and woocommerce. I spent my very first years of life learning visual
+                        language. It is a long established fact that a reader will be distracted, when
+                        looking at its layout. Various versions have evolved over the years.
+                    </p>
+                </div>
+                <div class="col-3 text-center">
+                    <img src="./images/avatar.jpg" alt="avatar" class="rounded">
+                </div>
+            </div>
+        </section>
+        <!-- Contact section -->
+        <section class="contact">
+            <div class="row">
+                <h1 class="text-primary text-center my-5">Contact me</h1>
                 <div class="offset-1 col-3 d-flex align-items-center">
-                    <img src="./images/contact-us.png" alt="contact logo" class="img-fluid">
+                    <img src="./images/contact.png" alt="contact logo" class="img-fluid">
                 </div>
                 <div class="col-7">
-                    <form method="post" action="#">
+                    <form method="post" action="#" class="pb-5">
                         <div class="row">
                             <div class="col-sm-6">
                                 <!-- first name -->
@@ -44,7 +64,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- email -->
                         <div class="form-group">
                             <label for="email">E-mail *:</label>
@@ -52,21 +72,22 @@
                                 placeholder="Type your e-mail address here">
                             <div class="invalid-feedback d-block" id="emailError"></div>
                         </div>
-    
+
                         <!-- subject  -->
                         <div class="form-group">
                             <label for="subject">Subject *:</label>
                             <input type="text" id="subject" class="form-control" placeholder="Type your subject here">
                             <div class="invalid-feedback d-block" id="subjectError"></div>
                         </div>
-    
+
                         <!-- message -->
                         <div class="form-group">
                             <label for="message">Message *:</label>
-                            <textarea id="message" class="form-control" placeholder="How can you help?" rows="3"></textarea>
+                            <textarea id="message" class="form-control" placeholder="How can you help?"
+                                rows="3"></textarea>
                             <div class="invalid-feedback d-block" id="messageError"></div>
                         </div>
-    
+
                         <!-- text float end : https://stackoverflow.com/questions/45494882/css-float-right-not-working-in-bootstrap-4-navbar-->
                         <div class="row">
                             <div class="col-12">
@@ -80,9 +101,19 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer class="text-center py-5">
+            <div>&copy; 2021 All right reserved | Theme Developped By
+                <a href="https://www.fivepoints.fr">FivePoints</a>
+            </div>
+        </footer>
     </div>
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
